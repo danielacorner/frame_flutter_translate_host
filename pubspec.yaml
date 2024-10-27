@@ -1,10 +1,10 @@
 name: frame_flutter_translate_host
 description: "Connects to Frame and streams audio from its microphone, which is sent through a local (on Host device) vosk speech-to-text engine, translates the text into a target language on-device, and displays the translated text on the Frame display."
-publish_to: 'none'
+publish_to: "none"
 version: 0.1.0
 
 environment:
-  sdk: '>=3.4.3 <4.0.0'
+  sdk: ">=3.4.3 <4.0.0"
 
 dependencies:
   flutter:
@@ -27,5 +27,5 @@ flutter:
     - packages/simple_frame_app/lua/battery.min.lua
     - packages/simple_frame_app/lua/data.min.lua
     - packages/simple_frame_app/lua/plain_text.min.lua
-    - assets/vosk-model-small-cn-0.22.zip
+    - assets/vosk-model-small-ko-0.22.zip
     - assets/frame_app.min.lua

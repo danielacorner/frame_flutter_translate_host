@@ -34,7 +34,7 @@ class MainAppState extends State<MainApp> with SimpleFrameAppState {
   }
 
   /// translate application members
-  static const _modelName = 'vosk-model-small-cn-0.22.zip';
+  static const _modelName = 'vosk-model-small-ko-0.22.zip';
   final _vosk = VoskFlutterPlugin.instance();
   late final Model _model;
   late final Recognizer _recognizer;
@@ -44,7 +44,7 @@ class MainAppState extends State<MainApp> with SimpleFrameAppState {
   String _translatedText = "N/A";
 
   final _translator = OnDeviceTranslator(
-    sourceLanguage: TranslateLanguage.chinese,
+    sourceLanguage: TranslateLanguage.korean,
     targetLanguage: TranslateLanguage.english);
 
   @override
